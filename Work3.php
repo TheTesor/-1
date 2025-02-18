@@ -1,12 +1,12 @@
 <?php
-$n = -1;
+$monthNumber = -1;
 echo "Введите номер вашего месяца: ";
-while ($n < 1 || $n > 12) {
+while ($monthNumber < 1 || $monthNumber > 12) {
    echo "Неверный номер месяца. Попробуйте снова: ";
-   $n = readline();
+   $monthNumber = readline();
 }
 
-$days_in_month = [
+$daysInMonth = [
    1 => 31,
    2 => 28,
    3 => 31,
@@ -21,4 +21,4 @@ $days_in_month = [
    12 => 31
 ];
 
-echo "В вашем месяце " . $days_in_month[$n] . " дней." . PHP_EOL;
+echo "В вашем месяце " . $daysInMonth[$monthNumber] . " дней." . PHP_EOL;
